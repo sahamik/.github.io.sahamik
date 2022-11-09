@@ -1,0 +1,196 @@
+/* sivujen css-tyylit */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --teksti: #3b3939;
+    --tausta: #eeeeee;
+    --teksti-paaotsikko: #282727;
+    --highlight: #383838;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Yleiskäyttöisiä tyylejä */
+
+/* Vertikaalinen keskittäminen */
+.v-center {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%
+}
+
+/* Horisontaalinen oikea tasaus */
+.h-right {
+    position: absolute;
+    right: 0;
+}
+
+/* Highlight korostus */
+
+.highlight {
+    color: rgb(77, 77, 77);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--tausta);
+    color: var(--teksti);
+}
+
+/* Header */
+header {
+    background-color: #1f1f1f;
+    color: darkolivegreen;
+    font-size: 1.3em;
+    padding: 15px 0;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: var(--highlight) solid 5px;
+}
+
+header .logo {
+    float: left;
+    font-size: 2em;
+}
+
+header .logo img {
+    float: left;
+    height: 70px;
+    padding: 5px;
+    display: block;
+}
+
+header nav {
+    float: right;
+    
+}
+
+header nav a {
+    display: inline-block;
+    font-size: 1,2em;
+    color: darkolivegreen;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+header nav a:hover {
+    color: var(--tausta);
+    background-color: var(--highlight);
+    border-radius: 5px;
+}
+
+/* Tutkinnon osat */
+
+.tutkinnonosat {
+    padding: 0;
+}
+
+.tutkinnonosat > li {
+    list-style-type: none;
+}
+
+.tutkinnonosat > li > ul {
+    border-left:darkolivegreen solid 5px;
+}
+
+.tutkinnonosat > li > ul li {
+    list-style-type: square;
+}
+
+/* Ammattitaitovaatimukset */
+
+.ammattitaitovaatimukset {
+    padding: 0;
+
+}
+
+.ammattitaitovaatimukset > li {
+    list-style-type: none;
+}
+.ammattitaitovaatimukset > li > ul {
+    border-left: darkolivegreen solid 5px;
+}
+
+.ammattitaitovaatimukset > li > ul li {
+    padding: 0;
+    list-style-type:square;
+}
+
+
+
+
+/* main-lohkon tyylit */
+main {
+    color: var (--teksti);
+    font-size: 1.5em;
+    line-height: 1.4em;
+    padding-top: 80px;
+}
+
+/* Johdannon tyylit */
+.johdanto {
+    font-size: 1.7;
+    font-style: italic;
+    line-height: 1.4em;
+}
+
+/* section-lohkon tyylit */
+section {
+    color: var(--teksti);
+    max-width: 1100px;
+    width: 70%;
+    margin: 20px auto;
+
+}
+/* Bolded */
+.bolded {
+    font-weight: bold;
+}
+
+/* showcase */
+.showcase {
+    font-size: 1.7em;
+    line-height: 1.7em;
+    color: var(--teksti-paaotsikko);
+    width: 100%;
+    max-width:100%;
+    padding: 75px 0;
+    text-align: center;
+    background-color:darkolivegreen
+
+}
+
+/* Taulukko */
+
+table, th, td {
+    border: 2px solid;
+}
+
+/* Lisätietoa */
+.lisätietoa {
+    font-size: 1.0;
+    font-style: italic;
+    line-height: 1.4em;
+}
+/* Footer */
+footer {
+    background-color: darkolivegreen;
+    padding: 30px 0;
+    text-align:center
+}
+
+footer.arviointisivu {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+
+
